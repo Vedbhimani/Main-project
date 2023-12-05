@@ -1,0 +1,81 @@
+/* General styles */
+body {
+    font-family:'Noto serif Georgian', sans-serif ;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  
+  /* Main content styles */
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Product grid styles */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+  }
+  
+  /* product styles */
+  .product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    text-align: center;
+    height: 100%; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column; 
+  }
+  /* product img styles */
+  .product img {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .product h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .product p {
+    color: #666;
+    flex-grow: 1;
+  }
+
+  .product .price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product p:last-child {
+    margin-bottom: 15px;
+  }
+  
+  /* styling button */
+  .product button {
+    background-color: white;
+    color: black;
+    border: 1px solid;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* adding style on hover */
+  .product button:hover {
+    background-color: lightpink;
+  }
+  

@@ -1,0 +1,83 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.heading {
+    font-family: 'Noto serif Georgian', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: mistyrose;
+    justify-content: center;
+    
+}
+.heading h4{
+    color: red;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; /* Make sure items have equal height */
+    padding: 20px;
+}
+.container h4{
+    color: red;
+}
+.about-1img,
+.about-2img,
+.about-3img,
+.about-4img,
+.about-1text,
+.about-2text,
+.about-3text,
+.about-4text {
+    flex: 0 0 300px; /* Fixed width for both image and text */
+    margin: 10px;
+    text-align: center;
+    height: auto;
+}
+
+.container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.about-1text {
+    background-color: #ffe6e6; /* Background color for the text section of about-1 */
+}
+
+.about-2text {
+    background-color: #e6f7ff; /* Background color for the text section of about-2 */
+}
+
+.about-3text {
+    background-color: #faffdb; /* Background color for the text section of about-3 */
+}
+
+.about-4text {
+    background-color: #ffd9b3; /* Background color for the text section of about-4 */
+}
+
+@media (max-width: 768px) {
+    .about-1img,
+    .about-2img,
+    .about-3img,
+    .about-4img,
+    .about-1text,
+    .about-2text,
+    .about-3text,
+    .about-4text {
+        flex: 0 0 100%; /* On smaller screens, make them take up the full width */
+    }
+}
