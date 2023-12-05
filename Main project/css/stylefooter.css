@@ -1,0 +1,32 @@
+footer{
+    font-family: 'Raleway', sans-serif;
+}
+.foot{
+    padding: 1%;
+    display: flex;
+    background-color: rgba(255, 200, 150, 0.5);
+}
+.part1{
+    width: 50%;
+}
+ul li a{
+    text-decoration: none;
+}
+ul li{
+    list-style-type: none;
+}
+ul li a:hover{
+    color: crimson;
+}
+
+@media (max-width:211px) {
+.foot{
+    flex-direction: column;
+    text-align: center;
+
+}
+ul li{
+    list-style-type: circle;
+}
+    
+}
