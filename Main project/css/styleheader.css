@@ -1,44 +1,44 @@
-/*Styling for CSS*/
-header{
+body {
     font-family: 'Raleway', sans-serif;
-    font-size: bold;
+    margin: 0;
+    padding: 0;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.logoimg{
-    width: 100%;
-    display: flex;
-}
-.navbar ul{
-    padding-left: 0%;
+header {
+    background-color: darkred;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     display: flex;
     justify-content: space-between;
-}
-.navbar ul li{
-    list-style-type: none;
+    align-items: center;
 }
 
-.navbar ul li a{
-    text-decoration: none;
-    color: white;
-    transition: all 0.5s ease;
-}
-
-.navbar ul li a:hover{
-    font-weight: bold;
-    color: brown;
-}
-
-@media (max-width:768px) {
-    .navbar ul{
-        flex-direction: column;
-        text-align: center;
-    }
-
+.logo img {
+    width: 140px; /* Adjust the width of your logo as needed */
+    height: auto;
     
 }
 
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar ul li {
+    margin-right: 50px;
+    font-size: 22px;
+    color:ghostwhite;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #ff6f61;
+}
