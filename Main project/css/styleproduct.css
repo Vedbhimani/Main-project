@@ -4,7 +4,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: lightcoral;
   }
   
   /* Main content styles */
@@ -75,7 +75,6 @@ body {
   }
   
   /* adding style on hover */
-  .product button:hover {
+.product button:hover {
     background-color: lightpink;
-  }
-  
+}
