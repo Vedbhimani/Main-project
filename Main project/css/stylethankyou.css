@@ -6,6 +6,18 @@
     margin: 0;
 }
 
-div {
+div  h4{
+    display: flex;
     text-align: center;
-};
+    font-size: 60px;
+    font-family: 'Noto serif Georgian', sans-serif;
+    color: red;
+}
+div p{
+    display: flex;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'roboto', sans-serif;
+    padding: 20px;
+    color:lightsalmon;
+}
