@@ -11,12 +11,6 @@ body {
     background-color: #f8f8f8;
 }
 
-header {
-    background-color: #8b4513; /* Chocolate Brown */
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
 
 nav {
     background-color: #d2b48c; /* Tan */
@@ -143,7 +137,7 @@ nav a:hover {
 .featured-dishes {
     text-align: center;
     padding: 40px 20px;
-    background-color: #fff;
+    background-color: red;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin: 20px;
@@ -180,7 +174,7 @@ nav a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #fff;
+    background-color: skyblue;
     padding: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -199,10 +193,64 @@ nav a:hover {
 .secondtext {
     flex-basis: 40%;
 }
-
-.footer {
-    background-color: #8b4513; /* Chocolate Brown */
+.rounded-button{
+    display: inline-block;
+    background-color: #f9bf3b;
     color: #fff;
-    text-align: center;
-    padding: 20px 0;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
 }
+.secondtext{
+    width: 5%;
+    margin: auto;
+  }
+  .secondtext .rounded-button{
+    color: #fff;
+    font-weight: 400;
+    line-height: 20px;
+    margin: auto;
+    max-width: 0px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 50px;
+  }
+  .secondtext .rounded-button:hover {
+    text-decoration: none;
+  }
+  .secondtext .rounded-button {
+    font-weight: 100;
+  }
+  .secondtext .rounded-button svg {
+    height: 45px;
+    left: -62px;
+    position: absolute;
+    width: 100px;
+  }
+  .secondtext .rounded-button rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+  }
+  .secondtext.rounded-button:hover {
+    background: rgba(225, 51, 45, 0);
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+  .secondtext .rounded-button:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1s ease-in-out;
+  }
+  /* mobile introduction row */
+  @media screen and (max-width: 768px){
+    .about{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+
